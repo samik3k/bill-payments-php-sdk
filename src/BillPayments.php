@@ -571,7 +571,7 @@ class BillPayments
             $this->internalCurl->setOpt($option, $value);
         }
 
-        $url = self::BILLS_URI.$uri;
+        $url = static::BILLS_URI.$uri;
         $this->internalCurl->setHeader('Accept', 'application/json');
         $this->internalCurl->setHeader('Authorization', 'Bearer '.$this->secretKey);
         switch ($method) {

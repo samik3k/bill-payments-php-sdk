@@ -12,7 +12,7 @@
         "php": ">=5.6.0",
         "ext-curl": "*",
         "ext-json": "*",
-        "curl/curl": "1.9.*"
+        "php-curl-class/php-curl-class": "9.1.*"
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "2.8.*",
