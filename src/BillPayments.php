@@ -599,7 +599,7 @@ class BillPayments
         }
 
         if (false === empty($this->internalCurl->response)) {
-            $json = json_decode($this->internalCurl->response, true);
+            $json = json_decode($this->internalCurl->getRawResponse(), true);
             if (null === $json) {
                 throw new BillPaymentsException(clone $this->internalCurl, json_last_error_msg(), json_last_error());
             }
